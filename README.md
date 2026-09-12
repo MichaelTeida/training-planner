@@ -38,8 +38,8 @@ Adaptive interface with customizable column layouts (1-4 columns), mobile-optimi
 
 ## Technologies
 
-- React 18.3.1
-- Vite 5.4.2
+- React 19.3.0
+- Vite 6.4.3
 - TypeScript 5.5.3
 - Tailwind CSS 3.4.11
 - Lucide React 1.16.0
