@@ -1,0 +1,250 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root,
+[data-theme="onyx"] {
+  color-scheme: dark;
+  --bg-base: #08090d;
+  --bg-elevated: #0d0f15;
+  --bg-surface: #11141c;
+  --border-subtle: rgba(255, 255, 255, 0.05);
+  --border-default: rgba(255, 255, 255, 0.08);
+  --text-primary: #e8e8ec;
+  --text-secondary: #8b8d98;
+  --text-muted: #5c5e6a;
+  --text-faint: #3e4049;
+  --accent: #e5484d;
+  --accent-hover: #d93d42;
+  --accent-text: #ffffff;
+  --accent-subtle: rgba(229, 72, 77, 0.12);
+  --accent-border: rgba(229, 72, 77, 0.25);
+  --accent-glow: rgba(229, 72, 77, 0.7);
+  --bg-subtle: rgba(255, 255, 255, 0.04);
+  --bg-hover: rgba(255, 255, 255, 0.03);
+  --bg-surface-soft: rgba(255, 255, 255, 0.02);
+  --bg-tag: rgba(255, 255, 255, 0.05);
+  --scrollbar-thumb: rgba(255, 255, 255, 0.08);
+}
+
+[data-theme="chalk"] {
+  color-scheme: dark;
+  --bg-base: #09090b;
+  --bg-elevated: #111113;
+  --bg-surface: #18181b;
+  --border-subtle: rgba(255, 255, 255, 0.06);
+  --border-default: rgba(255, 255, 255, 0.1);
+  --text-primary: #fafafa;
+  --text-secondary: #a1a1aa;
+  --text-muted: #71717a;
+  --text-faint: #3f3f46;
+  --accent: #f4f4f6;
+  --accent-hover: #e4e4e7;
+  --accent-text: #09090b;
+  --accent-subtle: rgba(244, 244, 246, 0.12);
+  --accent-border: rgba(244, 244, 246, 0.25);
+  --accent-glow: rgba(244, 244, 246, 0.6);
+  --bg-subtle: rgba(255, 255, 255, 0.05);
+  --bg-hover: rgba(255, 255, 255, 0.03);
+  --bg-surface-soft: rgba(255, 255, 255, 0.02);
+  --bg-tag: rgba(255, 255, 255, 0.06);
+  --scrollbar-thumb: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="titanium"] {
+  color-scheme: dark;
+  --bg-base: #07090e;
+  --bg-elevated: #0c1017;
+  --bg-surface: #111622;
+  --border-subtle: rgba(255, 255, 255, 0.05);
+  --border-default: rgba(255, 255, 255, 0.08);
+  --text-primary: #e6edfa;
+  --text-secondary: #8a96aa;
+  --text-muted: #536077;
+  --text-faint: #333d4e;
+  --accent: #3b82f6;
+  --accent-hover: #2563eb;
+  --accent-text: #ffffff;
+  --accent-subtle: rgba(59, 130, 246, 0.12);
+  --accent-border: rgba(59, 130, 246, 0.25);
+  --accent-glow: rgba(59, 130, 246, 0.7);
+  --bg-subtle: rgba(255, 255, 255, 0.04);
+  --bg-hover: rgba(255, 255, 255, 0.03);
+  --bg-surface-soft: rgba(255, 255, 255, 0.02);
+  --bg-tag: rgba(255, 255, 255, 0.05);
+  --scrollbar-thumb: rgba(255, 255, 255, 0.08);
+}
+
+[data-theme="nordic"] {
+  color-scheme: dark;
+  --bg-base: #070a08;
+  --bg-elevated: #0c110d;
+  --bg-surface: #111713;
+  --border-subtle: rgba(255, 255, 255, 0.05);
+  --border-default: rgba(255, 255, 255, 0.08);
+  --text-primary: #e6f0e9;
+  --text-secondary: #8a9e8f;
+  --text-muted: #536657;
+  --text-faint: #333f36;
+  --accent: #22c55e;
+  --accent-hover: #16a34a;
+  --accent-text: #ffffff;
+  --accent-subtle: rgba(34, 197, 94, 0.12);
+  --accent-border: rgba(34, 197, 94, 0.25);
+  --accent-glow: rgba(34, 197, 94, 0.7);
+  --bg-subtle: rgba(255, 255, 255, 0.04);
+  --bg-hover: rgba(255, 255, 255, 0.03);
+  --bg-surface-soft: rgba(255, 255, 255, 0.02);
+  --bg-tag: rgba(255, 255, 255, 0.05);
+  --scrollbar-thumb: rgba(255, 255, 255, 0.08);
+}
+
+[data-theme="ivory"] {
+  color-scheme: light;
+  --bg-base: #f6f7f9;
+  --bg-elevated: #ffffff;
+  --bg-surface: #ffffff;
+  --border-subtle: rgba(0, 0, 0, 0.08);
+  --border-default: rgba(0, 0, 0, 0.13);
+  --text-primary: #121316;
+  --text-secondary: #4a4d57;
+  --text-muted: #727685;
+  --text-faint: #9ea3b2;
+  --accent: #e5484d;
+  --accent-hover: #d93d42;
+  --accent-text: #ffffff;
+  --accent-subtle: rgba(229, 72, 77, 0.09);
+  --accent-border: rgba(229, 72, 77, 0.25);
+  --accent-glow: rgba(229, 72, 77, 0.45);
+  --bg-subtle: rgba(0, 0, 0, 0.04);
+  --bg-hover: rgba(0, 0, 0, 0.03);
+  --bg-surface-soft: rgba(0, 0, 0, 0.02);
+  --bg-tag: rgba(0, 0, 0, 0.05);
+  --scrollbar-thumb: rgba(0, 0, 0, 0.16);
+}
+
+[data-theme="studio"] {
+  color-scheme: light;
+  --bg-base: #f0f2f6;
+  --bg-elevated: #ffffff;
+  --bg-surface: #ffffff;
+  --border-subtle: rgba(15, 23, 42, 0.08);
+  --border-default: rgba(15, 23, 42, 0.14);
+  --text-primary: #0f172a;
+  --text-secondary: #334155;
+  --text-muted: #64748b;
+  --text-faint: #94a3b8;
+  --accent: #2563eb;
+  --accent-hover: #1d4ed8;
+  --accent-text: #ffffff;
+  --accent-subtle: rgba(37, 99, 235, 0.09);
+  --accent-border: rgba(37, 99, 235, 0.25);
+  --accent-glow: rgba(37, 99, 235, 0.45);
+  --bg-subtle: rgba(15, 23, 42, 0.04);
+  --bg-hover: rgba(15, 23, 42, 0.03);
+  --bg-surface-soft: rgba(15, 23, 42, 0.02);
+  --bg-tag: rgba(15, 23, 42, 0.05);
+  --scrollbar-thumb: rgba(15, 23, 42, 0.16);
+}
+
+html {
+  scrollbar-gutter: stable;
+  overflow-y: scroll;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: var(--bg-base);
+  color: var(--text-primary);
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: -0.011em;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { opacity: 0.8; }
+
+/* Touch and mobile optimizations */
+button, input, select, textarea, a {
+  touch-action: manipulation;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Kontener zapytań dla responsywnych kart dni */
+.day-card {
+  container-type: inline-size;
+}
+
+.day-name-full {
+  display: inline;
+}
+
+.day-name-short {
+  display: none;
+}
+
+@container (max-width: 175px) {
+  .day-name-full {
+    display: none !important;
+  }
+  .day-name-short {
+    display: inline !important;
+  }
+}
+
+@media print {
+  body {
+    background: #fff !important;
+    color: #111 !important;
+    font-size: 9pt;
+  }
+  .no-print { display: none !important; }
+  .print-only { display: block !important; }
+  .print-grid {
+    display: grid !important;
+    grid-template-columns: repeat(var(--print-cols, 2), minmax(0, 1fr)) !important;
+    gap: 5px !important;
+  }
+  .print-compact .print-grid {
+    gap: 3px !important;
+  }
+  .print-card {
+    border: 1px solid #d4d4d4 !important;
+    background: #fff !important;
+    color: #111 !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    border-radius: 3px !important;
+    padding: 5px 6px !important;
+  }
+  .print-badge-primary {
+    color: #b91c1c !important;
+    font-weight: 700 !important;
+  }
+  .print-rest {
+    border-style: dashed !important;
+    color: #6b7280 !important;
+  }
+  .print-table-container table {
+    page-break-inside: auto;
+  }
+  .print-table-container tr {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+}
+
+@media screen {
+  .print-only { display: none !important; }
+}
